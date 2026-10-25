@@ -1,0 +1,15 @@
+// Worksheet 2: Your First Circuit
+// Blinks an LED connected to pin 8 through a 220 ohm resistor.
+
+const int ledPin = 8;   // the pin the LED is connected to
+
+void setup() {
+  pinMode(ledPin, OUTPUT);      // pin 8 will send power out
+}
+
+void loop() {
+  digitalWrite(ledPin, HIGH);   // LED on
+  delay(1000);                  // wait 1 second
+  digitalWrite(ledPin, LOW);    // LED off
+  delay(1000);                  // wait 1 second
+}
